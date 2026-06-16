@@ -33,5 +33,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           curl \
-            -H "Authorization: API_TOKEN ${{secrets.API_TOKEN}}" \
+            -H "Authorization: Bearer ${{secrets.API_TOKEN}}" \
             https://github-sec.svcma.com/push/auth
